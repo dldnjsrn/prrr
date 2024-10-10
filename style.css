@@ -1,0 +1,1059 @@
+@charset 'utf-8';
+
+.inner {
+    width: 152rem;
+    width: 79.9%;
+    margin: 0 auto;
+    /* background: #ff5; */
+}
+
+#header {
+    background: var(--gnb-color);
+    width: 100%;
+}
+
+#header nav {
+    height: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#header::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    /* background: #00f; */
+    transition: 0.3s;
+    z-index: 10;
+    display: none;
+}
+
+.logo a {
+    display: block;
+    width: 15.2rem;
+    height: 6.5rem;
+    background: url(../imgs/logo.svg) no-repeat 0 0 / contain;
+    position: absolute;
+    left: 45%;
+
+    top: 30%;
+}
+
+.gnb {
+    display: flex;
+    margin: 0rem;
+}
+
+.gnb li {
+    display: flex;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: var(--sub-color);
+    width: 20rem;
+    position: relative;
+    margin: 0 1rem 0 3rem;
+}
+
+/* .gnb li:nth-child(2) {
+    margin: 0 8rem 0 -4rem;
+}
+
+.gnb li:nth-child(4) {
+    margin: 0 7rem 0 29rem;
+} */
+
+.submenu {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    width: 100%;
+
+    /* jQuery로 동작을 만들기 위한 준비 */
+    display: none;
+    padding-top: 30px;
+    z-index: 10;
+}
+
+.submenu li a {
+    display: block;
+    /* border: 1px solid #ff0; */
+    padding: 10px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+.util-menu {
+    display: flex;
+    gap: 3rem;
+}
+
+.btn-search {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+
+    background: url(../imgs/ico-menu2.svg) no-repeat 50%;
+}
+
+.btn-menu {
+    display: block;
+    width: 2.7rem;
+    height: 2.7rem;
+    background: url(../imgs/ico-menu.svg) no-repeat 50%;
+}
+
+.visual {
+    height: 100rem;
+    width: 100%;
+    background: url(../imgs/visual.jpg) no-repeat 0 50% / cover;
+    position: relative;
+    aspect-ratio: 1/0.0657894736842105;
+}
+
+.visual-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 21rem;
+    /* background: #5f5; */
+}
+
+.visual-title h2 {
+    font-weight: 700;
+    color: var(--sub-color);
+    font-size: 7rem;
+    font-size: clamp(4.1rem, 3.958vw, 7.6rem);
+    line-height: 1.2;
+}
+
+.visual-title strong {
+    font-size: 10rem;
+}
+
+.visual-title P {
+    padding: 3.8rem 0 2rem;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.btn-visual {
+    display: flex;
+
+    background: var(--main-color);
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: var(--white);
+    width: 29.4rem;
+    width: 46.2992125984252%;
+    height: 7.5rem;
+    border-radius: 3%;
+    justify-content: center;
+    align-items: center;
+}
+.dec-lin {
+    background: url(../imgs/deco.svg) no-repeat 0 0 / contain;
+    margin-top: 10rem;
+    display: flex;
+    width: 100%;
+}
+.gift-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.gift-list li {
+    width: 37.2rem;
+    width: 24.47368421052632%;
+    margin: 0 6.6rem;
+}
+
+.gift-list li dl dt {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--sub-color);
+    margin-top: 3.3rem;
+}
+.gift-list li dl dd {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #555;
+    margin-top: 1.8rem;
+}
+
+.gift .btn-more {
+    display: none;
+}
+
+/* .event-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.event-item {
+    margin: 0 7.4rem;
+    width: 100%;
+} */
+
+.history-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 10rem;
+}
+
+.history-mob {
+    display: none;
+}
+
+.btn-more {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #fff;
+    background: var(--main-color);
+    width: 20.6rem;
+    height: 5.4rem;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.history-pic img {
+    display: flex;
+    width: 83.2rem;
+    width: 73.73684210526316%;
+    height: 67.4rem;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.recipe-title {
+    margin-top: 24rem;
+}
+
+.recipe-title p {
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--decoration-color);
+}
+.recipe-title h4 {
+    font-weight: 700;
+    font-size: 5rem;
+    text-align: center;
+    color: var(--sub-color);
+    margin-top: 2.4rem;
+}
+
+.recipe-menu {
+    font-weight: 600;
+    font-size: 2.6rem;
+    font-size: clamp(2.6rem, 1.5625vw, 3rem);
+    color: var(--sub-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    gap: 4rem;
+}
+
+.recipe-menu li {
+    border: 1px solid var(--main-color);
+    width: 20.2rem;
+    width: 13.28947368421053%;
+    height: 6.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-menu li:nth-child(1):hover {
+    background: var(--sub-color);
+    color: var(--white);
+}
+.recipe-menu li:nth-child(2):hover {
+    background: var(--sub-color);
+    color: var(--white);
+}
+.recipe-menu li:nth-child(3):hover {
+    background: var(--sub-color);
+    color: var(--white);
+}
+.recipe-menu li:nth-child(4):hover {
+    background: var(--sub-color);
+    color: var(--white);
+}
+
+.recipe-con {
+    margin-top: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 8.5rem;
+}
+
+.recipe-item h5 {
+    font-weight: 700;
+    font-size: 5.5rem;
+    color: var(--main-color);
+}
+.recipe-item p {
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    color: var(--sub-color);
+}
+.recipe-item a {
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--sub-color);
+    display: block;
+    margin-top: 5rem;
+}
+
+.recipe-more {
+    margin-top: 13rem;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--sub-color);
+    text-align: center;
+}
+.recipe-list {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9.5rem;
+    overflow-x: auto;
+}
+
+.recipe-list li a {
+    font-weight: 400;
+    font-size: 2.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#footer {
+    margin-top: 21.9rem;
+    width: 100%;
+}
+
+#footer > img {
+    margin-bottom: 15rem;
+    width: 100%;
+}
+
+.foot-con {
+    height: 53.9rem;
+    width: 100%;
+    background: var(--dark-50);
+    padding-top: 5rem;
+}
+
+.foot-logo {
+    width: 12.5rem;
+    height: 4.5rem;
+    background: url(../imgs/foot-logo.svg) no-repeat 0 0 / contain;
+    margin: 0 auto;
+    left: 45%;
+    top: 5%;
+}
+
+.foot-text {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+
+    /* padding: 15rem; */
+}
+
+.foot-text li dl dt {
+    font-weight: 700;
+    font-size: 3.5rem;
+    font-size: clamp(1.5, 1.822916666666667vw, 3.5);
+    color: var(--decoration-color);
+    margin: 15rem 0 0;
+}
+
+.foot-text li dl dt::after {
+    content: "";
+    display: block;
+    background: url(../imgs/dec-lin2.svg) no-repeat 0 0 / contain;
+    width: 30rem;
+    height: 1rem;
+    margin-top: 2rem;
+}
+
+.foot-text li dl dd {
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: var(--white);
+    margin-top: 2rem;
+}
+
+.foot-sns dl dd a {
+    /* border: 1px solid #5f5; */
+    display: flex;
+    gap: 0.2rem;
+}
+
+.foot-sns dl dd a::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 1.4rem;
+    background: no-repeat 0 0 / contain;
+}
+
+.foot-sns dl dd a.facbook::before {
+    background-image: url(../imgs/foot-sns1.svg);
+}
+.foot-sns dl dd a.instagram::before {
+    background-image: url(../imgs/foot-sns2.svg);
+}
+.foot-sns dl dd a.youtube::before {
+    background-image: url(../imgs/foot-sns3.svg);
+}
+
+.foot-bottom {
+    height: 13rem;
+    background: var(--dark-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .inner {
+        width: 98.5rem;
+        width: 95.81712062256809%;
+    }
+
+    .header nav {
+        height: 12.5rem;
+    }
+
+    .gnb li:nth-child(2) {
+        margin: 0 8rem 0 -4rem;
+    }
+
+    .gnb li:nth-child(4) {
+        margin: 0 7rem 0 29rem;
+    }
+
+    .visual {
+        height: 67.4rem;
+        background: url(../imgs/visual.jpg) no-repeat 65% 0 / cover;
+    }
+
+    .btn-visual {
+        width: 22.5rem;
+        width: 46.6805%;
+        height: 5.7rem;
+        font-size: 2rem;
+    }
+
+    .gift-list li {
+        margin: 0;
+        width: 80rem;
+        width: 77.821%;
+    }
+
+    .gift-list li a figure img {
+        width: 80rem;
+        width: 100%;
+        height: 60rem;
+        margin-left: 80rem;
+        object-fit: contain;
+    }
+
+    .gift-list li dl {
+        margin-left: 80rem;
+        width: 80rem;
+        width: 100%;
+    }
+
+    .recipe-menu li {
+        width: 20.2rem;
+        width: 19.6498%;
+    }
+}
+
+/* 태블릿 */
+@media screen and (max-width: 1028px) {
+    .inner {
+        width: 98.5rem;
+        width: 95.81712062256809%;
+    }
+
+    .header nav {
+        height: 12.5rem;
+    }
+
+    .gnb {
+        display: none;
+    }
+
+    .logo a {
+        margin-left: -44rem;
+    }
+
+    .util-menu {
+        margin-right: -88rem;
+    }
+
+    .util-menu a:nth-child(3) {
+        display: none;
+    }
+    .material-symbols--menu {
+        width: 3em;
+        height: 3em;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%234d2f20' d='M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z'/%3E%3C/svg%3E");
+    }
+
+    .visual {
+        height: 67.4rem;
+        background: url(../imgs/visual.jpg) no-repeat 65% 0 / cover;
+    }
+
+    .visual-title {
+        left: 2rem;
+        top: 50%;
+    }
+
+    .visual-title h2 {
+        font-size: 5.3rem;
+    }
+    .visual-title strong {
+        font-size: 7.6rem;
+    }
+    .visual-title p {
+        font-size: 2.3rem;
+        margin-top: -1.5rem;
+    }
+
+    .btn-visual {
+        width: 22.5rem;
+        width: 46.6805%;
+        height: 5.7rem;
+        font-size: 2rem;
+    }
+
+    .dec-lin {
+        padding: 9.5rem 0 0 0;
+    }
+
+    .sec-title h3 {
+        font-size: 5.6rem;
+        padding: 0 0 1.8rem;
+    }
+
+    .gift-list {
+        text-align: center;
+    }
+
+    .gift-list li {
+        margin: 0;
+        width: 80rem;
+        width: 77.821%;
+    }
+
+    .gift-list li a figure img {
+        width: 80rem;
+        width: 100%;
+        height: 60rem;
+        margin-left: 80rem;
+        object-fit: contain;
+    }
+
+    .gift-list li dl {
+        margin-left: 80rem;
+        width: 80rem;
+        width: 100%;
+    }
+
+    .gift-list li dl dt {
+        font-size: 4.8rem;
+    }
+    .gift-list li dl dd {
+        font-size: 3rem;
+    }
+
+    .gift .btn-more {
+        display: flex;
+        margin-top: 7.5rem;
+    }
+
+    .sec-title h3 {
+        margin-top: 17rem;
+    }
+
+    .event-list {
+        margin-left: 20rem;
+    }
+
+    .history-pic img {
+        display: none;
+    }
+
+    .history-mob {
+        display: flex;
+    }
+
+    .history-item {
+        flex-direction: column-reverse;
+    }
+
+    .recipe-title p {
+        font-size: 2.8rem;
+    }
+    .recipe-title h4 {
+        font-size: 4.4rem;
+    }
+    .recipe-menu {
+        font-size: 3rem;
+    }
+    .recipe-menu li {
+        width: 20.2rem;
+        width: 19.6498%;
+    }
+
+    .recipe-con {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .recipe-item h5 {
+        font-size: 5rem;
+    }
+    .recipe-item p {
+        font-size: 2rem;
+    }
+    .recipe-item a {
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    .recipe-more {
+        font-size: 4.235rem;
+    }
+    .recipe-list {
+        justify-content: flex-start;
+        margin-left: 5rem;
+    }
+
+    .recipe-list li img {
+        width: 39.1rem;
+        height: 27.3rem;
+    }
+    .recipe-list li a {
+        font-size: 3.46rem;
+    }
+    #footer {
+        margin-top: 19.9rem;
+    }
+    #footer .foot-line {
+        display: none;
+    }
+
+    .foot-con {
+        height: 77.4rem;
+    }
+
+    .foot-logo {
+        width: 15.6rem;
+        width: 15.1751%;
+        height: 5.4rem;
+    }
+    .foot-text {
+        flex-wrap: wrap;
+        padding: 0 3rem;
+        column-gap: 12.5rem;
+        row-gap: 0;
+        text-align: center;
+    }
+
+    .foot-sns dl dd a {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot-bottom {
+        height: 11rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .inner {
+        width: 41rem;
+        width: 95.34883720930233%;
+    }
+
+    #header nav {
+        height: 5.2rem;
+        margin-top: 2rem;
+    }
+
+    .logo a {
+        margin-left: -14rem;
+        width: 7rem;
+        height: 3.1rem;
+    }
+
+    .util-menu {
+        margin-right: -34rem;
+    }
+
+    .material-symbols--menu {
+        width: 3em;
+        height: 3em;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%234d2f20' d='M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z'/%3E%3C/svg%3E");
+    }
+
+    .visual {
+        height: 52.9rem;
+        background: url(../imgs/visual.jpg) no-repeat 52% 0 / cover;
+    }
+
+    .visual-title h2 {
+        font-size: 3rem;
+    }
+
+    .visual-title strong {
+        font-size: 4.1rem;
+    }
+
+    .visual-title p {
+        font-size: 1.4rem;
+    }
+
+    .btn-visual {
+        width: 14.3rem;
+        width: 55%;
+        height: 3.6rem;
+        font-size: 1.3rem;
+    }
+
+    .sec-title h3 {
+        font-size: 2.4rem;
+        margin-top: 4rem;
+    }
+    .sec-title p {
+        font-size: 1.4rem;
+        padding: 1rem 0 3rem;
+    }
+
+    .gift-list {
+        gap: 15rem;
+    }
+
+    .gift-list li {
+        width: 19rem;
+        width: 46.3415%;
+    }
+
+    .gift-list li a figure img {
+        width: 32rem;
+        height: 26rem;
+        margin-left: 27rem;
+    }
+
+    .gift-list li dl {
+        width: 32rem;
+        width: 168.4211%;
+        height: 26rem;
+        margin-left: 27rem;
+    }
+
+    .gift-list li dl dt {
+        font-size: 2.3rem;
+    }
+
+    .gift-list li dl dd {
+        font-size: 1.4rem;
+    }
+
+    .gift .btn-more {
+        width: 14.7rem;
+        width: 46%;
+        height: 3.92rem;
+        font-size: 1.8rem;
+        margin-top: 2.5rem;
+    }
+
+    .event-list {
+        margin-left: -3rem;
+    }
+
+    .event-item {
+        margin: 0 7.4rem;
+        width: 55%;
+    }
+
+    .event-item figure img {
+        width: 35.5rem;
+        height: 13.7rem;
+    }
+
+    .history-mob img {
+        width: 33.3rem;
+        width: 100%;
+        height: 33.5rem;
+        display: flex;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width: 500px) {
+    .inner {
+        width: 41rem;
+        width: 95.34883720930233%;
+    }
+
+    #header nav {
+        height: 5.2rem;
+        margin-top: 2rem;
+    }
+
+    .logo a {
+        margin-left: -14rem;
+        width: 7rem;
+        height: 3.1rem;
+    }
+
+    .util-menu {
+        margin-right: -30rem;
+    }
+
+    .material-symbols--menu {
+        width: 3em;
+        height: 3em;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%234d2f20' d='M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z'/%3E%3C/svg%3E");
+    }
+
+    .visual {
+        height: 52.9rem;
+        background: url(../imgs/visual.jpg) no-repeat 52% 0 / cover;
+    }
+
+    .visual-title h2 {
+        font-size: 3rem;
+    }
+
+    .visual-title strong {
+        font-size: 4.1rem;
+    }
+
+    .visual-title p {
+        font-size: 1.4rem;
+    }
+
+    .btn-visual {
+        width: 14.3rem;
+        width: 55%;
+        height: 3.6rem;
+        font-size: 1.3rem;
+    }
+
+    .sec-title h3 {
+        font-size: 2.4rem;
+        margin-top: 4rem;
+    }
+    .sec-title p {
+        font-size: 1.4rem;
+        padding: 1rem 0 3rem;
+    }
+
+    .gift-list {
+        gap: 15rem;
+    }
+
+    .gift-list li {
+        width: 19rem;
+        width: 46.3415%;
+    }
+
+    .gift-list li a figure img {
+        width: 32rem;
+        height: 26rem;
+        margin-left: 27rem;
+    }
+
+    .gift-list li dl {
+        width: 32rem;
+        width: 168.4211%;
+        height: 26rem;
+        margin-left: 27rem;
+    }
+
+    .gift-list li dl dt {
+        font-size: 2.3rem;
+    }
+
+    .gift-list li dl dd {
+        font-size: 1.4rem;
+    }
+
+    .gift .btn-more {
+        width: 14.7rem;
+        width: 46%;
+        height: 3.92rem;
+        font-size: 1.8rem;
+        margin-top: 2.5rem;
+    }
+
+    .event-list {
+        margin-left: -3rem;
+    }
+
+    .event-item {
+        margin: 0 7.4rem;
+        width: 55%;
+    }
+
+    .event-item figure img {
+        width: 35.5rem;
+        height: 13.7rem;
+    }
+
+    .history-mob img {
+        width: 33.3rem;
+        width: 100%;
+        height: 33.5rem;
+        display: flex;
+    }
+
+    .btn-more {
+        width: 17rem;
+        width: 86.7347%;
+        height: 4.4rem;
+        font-size: 1.7rem;
+    }
+
+    .recipe-title p {
+        font-size: 2.4rem;
+    }
+
+    .recipe-title h4 {
+        font-size: 2.7rem;
+    }
+
+    .recipe-title {
+        margin-top: 10rem;
+    }
+
+    .recipe-menu {
+        font-size: 1.6rem;
+        gap: 0;
+        margin-top: 3rem;
+    }
+
+    .recipe-menu li {
+        width: 10.1rem;
+        width: 24.6341%;
+        height: 4.4rem;
+    }
+
+    .recipe-pic img {
+        width: 35.2rem;
+        height: 36.3em;
+    }
+
+    .recipe-con {
+        margin-top: 2rem;
+        gap: 3.5rem;
+    }
+
+    .recipe-item h5 {
+        font-size: 3.4rem;
+    }
+
+    .recipe-item p {
+        font-size: 1.4rem;
+    }
+
+    .recipe-item a {
+        font-size: 1.5rem;
+    }
+
+    .recipe-more {
+        font-size: 1.6rem;
+        margin-top: 8rem;
+    }
+
+    .recipe-list {
+        gap: 1.5rem;
+        margin-left: 2rem;
+        margin-top: 4rem;
+    }
+
+    .recipe-list li img {
+        width: 16.6rem;
+        height: 11.7rem;
+    }
+
+    .recipe-list li a {
+        font-size: 1.4rem;
+    }
+
+    #footer {
+        margin-top: 9rem;
+    }
+
+    .foot-con {
+        height: 45.5rem;
+    }
+
+    .foot-logo {
+        width: 6.6rem;
+        height: 3.3rem;
+    }
+
+    .foot-text {
+        column-gap: 8rem;
+        row-gap: 0;
+    }
+
+    .foot-text li dl dt {
+        font-size: 2.1rem;
+        margin: 3rem 0 0;
+    }
+    .foot-text li dl dd {
+        font-size: 1.1rem;
+    }
+
+    .foot-text li dl dt::after {
+        width: 12.9rem;
+    }
+
+    .foot-bottom {
+        height: 4.9rem;
+    }
+
+    .foot-bottom figure img {
+        width: 19rem;
+        height: 4.6rem;
+    }
+}
